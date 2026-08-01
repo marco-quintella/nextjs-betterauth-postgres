@@ -8,4 +8,7 @@ export default defineConfig({
   dbCredentials: {
     url: process.env.DATABASE_URL!,
   },
+  // Necessário pro drizzle-kit migrate no preDeploy do Railway:
+  // sem isso, o CLI tenta confirmar interativamente.
+  strict: true,
 });

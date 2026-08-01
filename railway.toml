@@ -5,6 +5,8 @@ builder = "NIXPACKS"
 # HOSTNAME=0.0.0.0 é OBRIGATÓRIO: o Railway injeta HOSTNAME=<container-id>,
 # e o Next.js standalone escuta só nesse hostname → healthcheck em localhost falha.
 startCommand = "HOSTNAME=0.0.0.0 node .next/standalone/server.js"
+# Aplica migrations do Drizzle antes de subir o app (idempotente — drizzle-kit migrate)
+preDeployCommand = "npm run db:migrate"
 healthcheckPath = "/api/health"
 healthcheckTimeout = 30
 restartPolicyType = "ON_FAILURE"
