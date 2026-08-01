@@ -1,5 +1,6 @@
 [build]
-builder = "NIXPACKS"
+# Railpack é o builder atual do Railway (Nixpacks é legado).
+builder = "RAILPACK"
 
 [deploy]
 # HOSTNAME=0.0.0.0 é OBRIGATÓRIO: o Railway injeta HOSTNAME=<container-id>,
