@@ -2,6 +2,10 @@
 
 Starter moderno pra SaaS, apps autenticados e MVPs — deployável no Railway em 1 clique.
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new?template=https://github.com/marco-quintella/nextjs-betterauth-postgres)
+
+> **Nota:** após publicar o template no marketplace (Dashboard → Templates → Publish), substitua o link acima pelo oficial gerado na publicação (`railway.com/new/template/<CODE>`).
+
 ## Stack
 
 - **Next.js 16** (App Router, output `standalone` pra Docker enxuto)
